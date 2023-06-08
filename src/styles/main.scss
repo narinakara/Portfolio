@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+$white:#F3F2F0;
+$red: #D40000;
+
+$font-inter: 'Inter', sans-serif;
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    color: #232326;
+    font-family: $font-inter;
+    background-color: #232326;
+}
+.header {
+    max-width: 1440px;
+    margin: 0 auto 4.6rem;
+    padding: 4rem 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    &__navigation {
+        display: flex;
+        list-style-type: none;
+        flex-grow: 1;
+        margin-left: 4.8rem;
+    }
+    &__nav {
+        color: $white;
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+        gap: 4.8rem;
+    }
+    &__link {
+        color: $white;
+        text-decoration: none;
+        transition: .3s;
+        &:hover {
+            color: $red;
+        }
+    }
+    &__contacts {
+        display: flex;
+        gap: 1rem;
+        margin: 0;
+        &_item {
+            color: $white;
+            text-decoration: none;
+            list-style-type: none;
+            transition: .3s;
+            &:hover {
+                color: $red;
+            }
+        }
+        &_tel {
+            color: $white;
+            text-decoration: none;
+            flex-basis: 160px;
+            letter-spacing: .13rem;
+            transition: .3s;
+            border-right: 1px solid $white;
+            padding-right: 1rem;
+            &:hover {
+                color: $red;
+            }
+        }
+        &_mail {
+            color: $white;
+            text-decoration: none;
+            flex-basis: 160px;
+            letter-spacing: .13rem;
+            transition: .3s;
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.banner {
+    background-repeat: no-repeat;
+}
