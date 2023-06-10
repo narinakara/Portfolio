@@ -252,3 +252,19 @@ body {
         justify-content: space-around;
     }
 }
+.portfolio__title {
+    margin-top: 18rem;
+    &_h1 {
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 7.4rem;
+        line-height: 90px;
+    }
+}
+.portfolio {
+    background: linear-gradient(180deg, #141416 0%, rgba(20, 20, 22, 0) 100%);
+}
+.agata {
+    display: flex;
+}
