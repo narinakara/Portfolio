@@ -4,6 +4,12 @@ $white:#F3F2F0;
 $red: #D40000;
 
 $font-inter: 'Inter', sans-serif;
+[class*="__container"] {
+    max-width: 1140px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
 
 html {
     font-size: 10px;
@@ -15,12 +21,7 @@ body {
     font-family: $font-inter;
     background-color: #232326;
 }
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 .header {
     max-width: 1440px;
     margin: 0 auto 4.6rem;
@@ -33,7 +34,6 @@ body {
         display: flex;
         list-style-type: none;
         flex-grow: 1;
-        margin-left: 4.8rem;
     }
     &__nav {
         color: $white;
@@ -197,11 +197,14 @@ body {
             font-size: 2.8rem;
             letter-spacing: 0.03em;
             text-transform: uppercase;
+            margin-top: 0;
         }
         &_text {
             font-weight: 400;
             font-size: 2.8rem;
             opacity: 0.8;
+            flex-basis: 60rem;
+            margin-top: 0;
         }
     }
     &__grid {
@@ -228,16 +231,20 @@ body {
         display: flex;
         justify-content: space-between;
         color: $white;
+        align-items: center;
+    }
+    &__item-border {
         border-top: 1px solid $white;
-        &_title {
-            font-weight: 400;
-            font-size: 2.8rem;
-        }
-        &_text {
-            font-weight: 400;
-            font-size: 1.6rem;
-            opacity: 0.8;
-        }
+        border-bottom: 1px solid $white;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 2.8rem;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 1.6rem;
+        opacity: 0.8;
     }
     &__three {
         display: flex;
@@ -245,6 +252,7 @@ body {
     }
 }
 .portfolio__title {
+    background-color: #232326;
     margin-top: 18rem;
     &_h1 {
         color: $white;
@@ -259,6 +267,10 @@ body {
 }
 .agata {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 6rem;
+    padding-top: 3rem;
     border-bottom: 1px solid $white;
     &__desc {
         color: $white;
@@ -273,6 +285,8 @@ body {
             font-size: 1.6rem;
             opacity: 0.8;
             margin-bottom: 4rem;
+            list-style-type: none;
+            padding-left: 0;
         }
         &_time {
             font-weight: 700;
@@ -283,6 +297,10 @@ body {
 }
 .lemon {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
     border-bottom: 1px solid $white;
     &__desc {
         color: $white;
@@ -297,6 +315,8 @@ body {
             font-size: 1.6rem;
             opacity: 0.8;
             margin-bottom: 4rem;
+            list-style-type: none;
+            padding-left: 0;
         }
         &_time {
             font-weight: 700;
@@ -304,6 +324,10 @@ body {
             opacity: 0.8;
         }
     }
+}
+.work {
+    width: 560px;
+    height: 315px;
 }
 .text {
     margin-top: 18rem;
@@ -313,6 +337,8 @@ body {
         font-weight: 400;
         font-size: 2.8rem;
         max-width: 870px;
+        margin: 0;
+        margin-bottom: 8rem;
     }
 }
 .list-grid {
