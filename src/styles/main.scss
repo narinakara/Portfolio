@@ -163,7 +163,7 @@ body {
             }
         }
         &:hover {
-            color: $red;
+            border-bottom: 2px solid $white;
         }
     }
     &__socials {
@@ -184,25 +184,16 @@ body {
             border-right: 1px solid $white;
             padding-right: 2.8rem;
             cursor: pointer;
-            &:hover {
-                color: $red;
-            }
         }
         &_inst {
             border-right: 1px solid $white;
             padding-left: 2rem;
             padding-right: 2.8rem;
             cursor: pointer;
-            &:hover {
-                color: $red;
-            }
         }
         &_teleg {
             padding-left: 2rem;
             cursor: pointer;
-            &:hover {
-                color: $red;
-            }
         }
     }
     &__list {
@@ -302,10 +293,14 @@ body {
         justify-content: space-around;
     }
 }
-.portfolio__title {
-    background-color: #232326;
-    margin-top: 18rem;
-    &_h1 {
+.portfolio {
+    background: linear-gradient(180deg, #141416 0%, rgba(20, 20, 22, 0) 100%);
+    &__title-box {
+            background-color: #232326;
+            margin-top: 18rem;
+            padding-bottom: 9.6rem;
+    }
+    &__title {
         color: $white;
         text-transform: uppercase;
         font-weight: 700;
@@ -324,15 +319,12 @@ body {
         }
     }
 }
-.portfolio {
-    background: linear-gradient(180deg, #141416 0%, rgba(20, 20, 22, 0) 100%);
-}
 .agata {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 6rem;
-    padding-top: 3rem;
+    padding-top: 6rem;
     border-bottom: 1px solid $white;
     &__desc {
         color: $white;
@@ -340,13 +332,14 @@ body {
         &_title {
             font-weight: 700;
             font-size: 2.8rem;
-            margin-bottom: 4rem;
+            margin-bottom: 4.3rem;
+            margin-top: 1.7rem;
         }
         &_text {
             font-weight: 400;
             font-size: 1.6rem;
             opacity: 0.8;
-            margin-bottom: 4rem;
+            margin-bottom: 4.3rem;
             list-style-type: none;
             padding-left: 0;
             line-height: 150%;
@@ -374,13 +367,14 @@ body {
         &_title {
             font-weight: 700;
             font-size: 2.8rem;
-            margin-bottom: 4rem;
+            margin-top: 2.2rem;
+            margin-bottom: 4.8rem;
         }
         &_text {
             font-weight: 400;
             font-size: 1.6rem;
             opacity: 0.8;
-            margin-bottom: 4rem;
+            margin-bottom: 4.7rem;
             list-style-type: none;
             padding-left: 0;
         }
@@ -426,6 +420,26 @@ body {
             font-weight: 400;
             font-size: 1.4rem;
             opacity: 0.8;
+        }
+    }
+}
+.table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid $white;
+    &__tr {
+        border: 1px solid $white;
+    }
+    &__td {
+        border: 1px solid $white;
+    }
+    &__img {
+        transition: .3s;
+        cursor: pointer;
+        filter: grayscale(1);
+        &:hover {
+            filter: grayscale(0);
         }
     }
 }
