@@ -430,6 +430,7 @@ body {
     width: 100%;
     border-collapse: collapse;
     border: 1px solid $white;
+    position: relative;
     &__tr {
         border: 1px solid $white;
     }
@@ -438,14 +439,30 @@ body {
         text-align: center;
     }
     &__td-cover {
-        background-position-x: center;
+        
     }
     &__img {
         transition: .3s;
         cursor: pointer;
         filter: grayscale(1);
+        z-index: -1;
         &:hover {
             filter: grayscale(0);
+        }
+    }
+    &__dropdown {
+        background-color: $red;
+        color: $white;
+        position: absolute;
+        width: 23rem;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 150%;
+        cursor: pointer;
+        z-index: 1;
+        display: none;
+        &:hover {
+            display: block;
         }
     }
 }
