@@ -151,12 +151,14 @@ body {
         color: $white;
         background-color: transparent;
         cursor: pointer;
+        transition: .3s;
         &::after {
             content: '';
             background-image: url(../images/Arrow\ 1.svg);
             background-repeat: no-repeat;
             width: 25px;
             height: 12px;
+            transition: .3s;
             &:hover {
                 color: $red;
                 cursor: pointer;
@@ -433,6 +435,10 @@ body {
     }
     &__td {
         border: 1px solid $white;
+        text-align: center;
+    }
+    &__td-cover {
+        background-position-x: center;
     }
     &__img {
         transition: .3s;
