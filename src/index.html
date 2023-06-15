@@ -53,7 +53,7 @@
                         <p class="main__subtitle">Наринэ Карагевурян</p>
                         <h1 class="main__title">web-разработчик</h1>
                         <div class="main__flex">
-                            <button class="main__text">Обсудить проект</button>
+                            <button class="main__text" onclick="openModal()">Обсудить проект</button>
                             <div class="main__socials">
                                 <p class="main__socials_vk">Vk</p>
                                 <p class="main__socials_inst">Instagram</p>
@@ -110,15 +110,24 @@
             <section class="stages">
                 <div class="stages__container">
                     <div class="stages__item stages__item-border">
-                        <h2 class="stages__title">01     Вы заказываете сайт</h2>
+                        <div class="stages__tl">
+                            <h2 class="stages__title">01</h2>
+                            <h2 class="stages__subject">Вы заказываете сайт</h2>
+                        </div>
                         <p class="stages__text">Связываетесь со мной по телефону или через заявку на сайте</p>
                     </div>
                     <div class="stages__item">
-                        <h2 class="stages__title">02     Обговариваем детали</h2>
+                        <div class="stages__tl">
+                            <h2 class="stages__title">02</h2>
+                            <h2 class="stages__subject">Обговариваем детали</h2>
+                        </div>
                         <p class="stages__text">Созваниваемся или списываемся любым удобным для вас способом</p>
                     </div>
                     <div class="stages__item stages__item-border">
-                        <h2 class="stages__title">03     Этап программирования</h2>
+                        <div class="stages__tl">
+                            <h2 class="stages__title">03</h2>
+                            <h2 class="stages__subject">Этап программирования</h2>
+                        </div>
                         <p class="stages__text">Верстаю сайт по вашему проекту пиксель в пиксель</p>
                     </div>
                 </div>
@@ -203,37 +212,52 @@
                                 <div class="table__td-cover">
                                     <img class="table__img" src="images/html5.png" alt="html5">
                                 </div>
-                                <div class="table__dropdown">
-                                    <h4 class="table__title">HTML5</h4>
-                                    <p class="table__text">Язык для структурирования и представления содержимого всемирной паутины</p>
+                                <div class="table__dropdown-container">
+                                    <div class="table__dropdown">
+                                        <div class="table__dropdown-box">
+                                            <h4 class="table__title">HTML5</h4>
+                                            <p class="table__text">Язык для структурирования и представления содержимого всемирной паутины</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                             <td class="table__td">
                                 <div class="table__td-cover">
                                     <img class="table__img" src="images/css3.png" alt="CSS3">
                                 </div>
-                                <div class="table__dropdown">
-                                    <h4 class="table__title">CSS3</h4>
-                                    <p class="table__text">Представляет собой формальный язык, реализованный с помощью языка разметки
-                                    </p>
+                                <div class="table__dropdown-container">
+                                    <div class="table__dropdown">
+                                        <div class="table__dropdown-box">
+                                            <h4 class="table__title">CSS3</h4>
+                                            <p class="table__text">Представляет собой формальный язык, реализованный с помощью языка разметки</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                             <td class="table__td">
                                 <div class="table__td-cover">
                                     <img class="table__img" src="images/js.png" alt="js">
                                 </div>
-                                <div class="table__dropdown">
-                                    <h4 class="table__title">JavaScript ES6+</h4>
-                                    <p class="table__text">Язык программирования высокого уровня, использующийся для придания интерактивности веб-страницам</p>
+                                <div class="table__dropdown-container">
+                                    <div class="table__dropdown">
+                                        <div class="table__dropdown-box">
+                                            <h4 class="table__title">JS</h4>
+                                            <p class="table__text">Язык программирования высокого уровня, использующийся для придания интерактивности веб-страницам</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                             <td class="table__td">
                                 <div class="table__td-cover">
                                     <img class="table__img" src="images/jQuery.png" alt="jQuery">
                                 </div>
-                                <div class="table__dropdown">
-                                    <h4 class="table__title">jQuery</h4>
-                                    <p class="table__text">Набор функций JavaScript, фокусирующийся на взаимодействии JavaScript и HTML</p>
+                                <div class="table__dropdown-container">
+                                    <div class="table__dropdown">
+                                        <div class="table__dropdown-box">
+                                            <h4 class="table__title">jQuery</h4>
+                                            <p class="table__text">Набор функций JavaScript, фокусирующийся на взаимодействии JavaScript и HTML</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                         </tr>
@@ -244,36 +268,52 @@
                                 <div class="table__td-cover">
                                     <img class="table__img" src="images/bootstrap.png" alt="bootstrap">
                                 </div>
-                                <div class="table__dropdown">
-                                    <h4 class="table__title">BOOTSTRAP</h4>
-                                    <p class="table__text">Набор инструментов для создания сайтов и веб-приложений</p>
+                                <div class="table__dropdown-container">
+                                    <div class="table__dropdown">
+                                        <div class="table__dropdown-box">
+                                            <h4 class="table__title">bootstrap</h4>
+                                            <p class="table__text">Набор инструментов ДЛЯ создания сайтов и веб-приложений</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                             <td class="table__td">
                                 <div class="table__td-cover">
                                     <img class="table__img" src="images/php.png" alt="php">
                                 </div>
-                                <div class="table__dropdown">
-                                    <h4 class="table__title">PHP</h4>
-                                    <p class="table__text">Скриптовый язык общего назначения</p>
+                                <div class="table__dropdown-container">
+                                    <div class="table__dropdown">
+                                        <div class="table__dropdown-box">
+                                            <h4 class="table__title">PHP</h4>
+                                            <p class="table__text">Скриптовый язык общего назначения</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                             <td class="table__td">
                                 <div class="table__td-cover">
                                     <img class="table__img" src="images/V.png" alt="V">
                                 </div>
-                                <div class="table__dropdown">
-                                    <h4 class="table__title">VUE.JS</h4>
-                                    <p class="table__text">JavaScript-фреймворк с открытым исходным кодом для создания пользовательских интерфейсов</p>
+                                <div class="table__dropdown-container">
+                                    <div class="table__dropdown">
+                                        <div class="table__dropdown-box">
+                                            <h4 class="table__title">VUE.JS</h4>
+                                            <p class="table__text">JavaScript-фреймворк с открытым исходным кодом для создания пользовательских интерфейсов</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                             <td class="table__td">
                                 <div class="table__td-cover">
                                     <img class="table__img" src="images/Wordpress-Logo.png" alt="WORDPRESS">
                                 </div>
-                                <div class="table__dropdown">
-                                    <h4 class="table__title">WORDPRESS</h4>
-                                    <p class="table__text">Cистема управления содержимым сайта с открытым исходным кодом</p>
+                                <div class="table__dropdown-container">
+                                    <div class="table__dropdown">
+                                        <div class="table__dropdown-box">
+                                            <h4 class="table__title">WORDPRESS</h4>
+                                            <p class="table__text">Cистема управления содержимым сайта с открытым исходным кодом</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                         </tr>
@@ -281,7 +321,7 @@
             </table>
             </div>
         </section>
-        <div class="rates">
+        <section class="rates">
             <div class="rates__container">
                 <div class="rates__desc">
                     <h2 class="rates__desc_title">Тарифы</h2>
@@ -291,7 +331,7 @@
                     <div class="development">
                         <h2 class="development__title">Разработка лэндинга&nbsp;или&nbsp;сайт визитки</h2>
                         <p class="development__text">Небольшой сайт состоящий из одной страницы</p>
-                        <button class="main__text">Обсудить проект</button>
+                        <button class="main__text" onclick="openModal()">Обсудить проект</button>
                     </div>
                     <div class="development-two">
                         <p class="development-two__text">Что входит</p>
@@ -307,7 +347,7 @@
                     <div class="development">
                         <h2 class="development__title">Разработка корпоративного  сайта</h2>
                         <p class="development__text">Небольшой сайт с n-количеством страниц</p>
-                        <button class="main__text">Обсудить проект</button>
+                        <button class="main__text" onclick="openModal()">Обсудить проект</button>
                     </div>
                     <div class="development-two">
                         <p class="development-two__text">Что входит</p>
@@ -316,14 +356,14 @@
                             <li>От 2-10 страниц</li>
                             <li>От 15 дней</li>
                         </ul>
-                        <p class="development-two__price">От 10 000 Р</p>
+                        <p class="development-two__money">От 10 000 Р</p>
                     </div>
                 </div>
                 <div class="development-flex">
                     <div class="development">
                         <h2 class="development__title">Разработка интернет&nbsp;-&nbsp;магазина</h2>
                         <p class="development__text">Полноценный каталог вашей продукции</p>
-                        <button class="main__text">Обсудить проект</button>
+                        <button class="main__text" onclick="openModal()">Обсудить проект</button>
                     </div>
                     <div class="development-two">
                         <p class="development-two__text">Что входит</p>
@@ -336,7 +376,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="feedback">
             <div class="feedback__container">
                 <div class="project">
@@ -404,6 +444,37 @@
                 </div>
             </div>
         </footer>
+        <div class="modal" id="modal">
+            <div class="modal__project">
+                <h1 class="modal__title">
+                    Расскажите о своем проекте
+                </h1>
+                <p class="modal__txt">
+                    Заполните все поля, и я свяжусь с вами в ближайшее время
+                </p>
+            </div>
+            <div class="contact__form">
+                <div class="card">
+                    <form>
+                        <label class="card__label">Телефон или почта</label>
+                        <input class="card__input" type="text" placeholder="Введите телефон">
+                        <label class="card__label">Выберите удобный способ связи</label>
+                        <input class="card__input" type="tel" placeholder="Telegram">
+                        <button type="submit" class="card__link">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <button class="burger-close" onclick="closeModal ()"></button>
+        </div>
     </div>
+    <script>
+        function openModal() {
+           document.getElementById("modal").style.top = "0px";
+       }
+
+       function closeModal() {
+           document.getElementById("modal").style.top = "-400px";
+       }
+    </script>
 </body>
 </html>
