@@ -11,6 +11,9 @@
         <div>
             <header class="header">
                 <div class="header__container">
+                    <div class="header__burger">
+                        <button class="burger" onclick="openModal()"></button>
+                    </div>
                     <nav class="header__navigation">
                         <ul class="header__nav">
                             <li class="header__item">
@@ -43,7 +46,7 @@
             <div class="banner">
                 <div class="banner__container">
                     <div class="banner__cover">
-                        <img src="images/banner.png" alt="Картинка">
+                        
                     </div>
                 </div>
             </div>
@@ -148,7 +151,7 @@
                             <li class="agata__desc_item">– наполнение сайта контентом</li>
                             <li class="agata__desc_item">– внедрена функция добавления видео</li>
                         </ul>
-                        <p class="agata__desc_time">Затрачено времени: 5 рабочих дней</p>
+                        <p class="agata__desc_time">Затрачено времени: 5&nbsp;рабочих дней</p>
                     </div>
                     <a href="https://narinakara.github.io/-Module01-Gym-/index.html" class="work">
                         <img src="images/kTGstj-A 1.svg" alt="Сайт">
@@ -162,7 +165,7 @@
                             <li class="lemon__desc_item">– доступен функционал получения заказов</li>
                             <li class="lemon__desc_item">– реализована кнопка «Заказать в 1 клик»</li>
                         </ul>
-                        <p class="lemon__desc_time">Затрачено времени: 7 рабочих дней</p>
+                        <p class="lemon__desc_time">Затрачено времени: 7&nbsp;рабочих дней</p>
                     </div>
                     <a href="https://narinakara.github.io/Modele02-Shop/dist" class="work">
                         <img src="images/w_XYX1dQ 1.svg" alt="Сайт">
@@ -177,30 +180,62 @@
         </div>
         <div class="result">
             <div class="result__container">
-                <ul class="result__grid">
-                    <h3 class="result__grid_title">Актуальные цены</h3>
-                    <p class="result__grid_tx">Ничего лишнего, без переплат, 100% отработка ваших денег</p>
-                </ul>
-                <ul class="result__grid">
-                    <h3 class="result__grid_title">Более 2-х лет опыта </h3>
-                    <p class="result__grid_tx">Это моя основная деятельность, создано более 150+ сайтов</p>
-                </ul>
-                <ul class="result__grid">
-                    <h3 class="result__grid_title">Оптимальные сроки</h3>
-                    <p class="result__grid_tx">Создание сайта любой сложности в самые сжатые сроки</p>
-                </ul>
-                <ul class="result__grid">
-                    <h3 class="result__grid_title">Всегда на связи</h3>
-                    <p class="result__grid_tx">Не теряюсь и не проматываю сроки. Подхожу ответственно</p>
-                </ul>
-                <ul class="result__grid">
-                    <h3 class="result__grid_title">Чистый код</h3>
-                    <p class="result__grid_tx">HTML код без всего лишнего, плюс адаптив под все устройства</p>
-                </ul>
-                <ul class="result__grid">
-                    <h3 class="result__grid_title">Поддержка сайта</h3>
-                    <p class="result__grid_tx">Быстро устраню любую проблему на вашем сайте</p>
-                </ul>
+                <div class="result__grid-item">
+                    <ul class="result__grid">
+                        <div class="result__cover">
+                            <img class="result__img" src="images/cil_money.png">
+                        </div>
+                        <div class="result__desc">
+                            <h3 class="result__grid_title">Актуальные цены</h3>
+                            <p class="result__grid_tx">Ничего лишнего, без переплат, 100%&nbsp;отработка&nbsp;ваших денег</p>
+                        </div>
+                    </ul>
+                    <ul class="result__grid">
+                        <div class="result__cover">
+                            <img class="result__img" src="images/cil_image-plus.png">
+                        </div>
+                        <div class="result__desc">
+                            <h3 class="result__grid_title">Более 2-х лет опыта </h3>
+                            <p class="result__grid_tx">Это моя основная деятельность, создано&nbsp;более&nbsp;150+ сайтов</p>
+                        </div>
+                    </ul>
+                    <ul class="result__grid">
+                        <div class="result__cover">
+                            <img class="result__img" src="images/Group.png">
+                        </div>
+                        <div class="result__desc">
+                            <h3 class="result__grid_title">Оптимальные сроки</h3>
+                            <p class="result__grid_tx">Создание сайта любой сложности в&nbsp;самые&nbsp;сжатые сроки</p>
+                        </div>
+                    </ul>
+                    <ul class="result__grid">
+                        <div class="result__cover">
+                            <img class="result__img" src="images/telephone-2 1.png">
+                        </div>
+                        <div class="result__desc">
+                            <h3 class="result__grid_title">Всегда на связи</h3>
+                            <p class="result__grid_tx">Не теряюсь и не проматываю&nbsp;сроки. Подхожу&nbsp;ответственно</p>
+                        </div>
+                    </ul>
+                    <ul class="result__grid">
+                        <div class="result__cover">
+                            <img class="result__img" src="images/mdi_code-json.png">
+                        </div>
+                        <div class="result__desc">
+                            <h3 class="result__grid_title">Чистый код</h3>
+                            <p class="result__grid_tx">HTML код без всего лишнего, плюс адаптив&nbsp;под&nbsp;все устройства</p>
+                        </div>
+                    </ul>
+                    <ul class="result__grid">
+                        <div class="result__cover">
+                            <img class="result__img" src="images/file 1.png">
+                        </div>
+                        <div class="result__desc">
+                            <h3 class="result__grid_title">Поддержка сайта</h3>
+                            <p class="result__grid_tx">Быстро устраню любую проблему на&nbsp;вашем&nbsp;сайте</p>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </div>
         <section class="tech">
@@ -340,7 +375,7 @@
                             <li>Одна посадочная страница</li>
                             <li>От 7 дней</li>
                         </ul>
-                        <p class="development-two__price">От 7 000 Р</p>
+                        <p class="development-two__price">От&nbsp;7&nbsp;000&nbsp;Р</p>
                     </div>
                 </div>
                 <div class="development-flex">
@@ -356,7 +391,7 @@
                             <li>От 2-10 страниц</li>
                             <li>От 15 дней</li>
                         </ul>
-                        <p class="development-two__money">От 10 000 Р</p>
+                        <p class="development-two__money">От&nbsp;10&nbsp;000&nbsp;Р</p>
                     </div>
                 </div>
                 <div class="development-flex">
@@ -372,7 +407,7 @@
                             <li>От 2-10 страниц, корзина, карточка товара</li>
                             <li>От 20 дней</li>
                         </ul>
-                        <p class="development-two__price">От 15 000 Р</p>
+                        <p class="development-two__price">От&nbsp;15&nbsp;000&nbsp;Р</p>
                     </div>
                 </div>
             </div>
@@ -393,7 +428,7 @@
                     </div>
                     <div class="contact__form">
                         <div class="card">
-                            <form>
+                            <form class="form">
                                 <label class="card__label">Телефон или почта</label>
                                 <input class="card__input" type="text" placeholder="Введите телефон">
                                 <label class="card__label">Выберите удобный способ связи</label>
@@ -455,7 +490,7 @@
             </div>
             <div class="contact__form">
                 <div class="card">
-                    <form>
+                    <form class="form">
                         <label class="card__label">Телефон или почта</label>
                         <input class="card__input" type="text" placeholder="Введите телефон">
                         <label class="card__label">Выберите удобный способ связи</label>
@@ -466,6 +501,41 @@
             </div>
             <button class="burger-close" onclick="closeModal ()"></button>
         </div>
+        <div class="menu" id="menu">
+            <ul class="header__menu">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Обо мне</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Портфолио</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Этапы работ</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Цены</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Обратная связь</a>
+                </li>
+            </ul>
+            <div class="menu__footer">
+                <ul class="menu__list">
+                    <li class="menu__contacts_item">
+                        <a href="tel:89183064206" class="menu__contacts_tel">8 918 306-42-06</a>
+                    </li>
+                    <li class="menu__contacts_item">
+                        <a href="mailto:karagevuryan04@bk.ru" class="menu__contacts_mail">karagevuryan04@bk.ru</a>
+                    </li>
+                </ul>
+                <div class="menu__socials">
+                    <p class="menu__socials_vk">Vk</p>
+                    <p class="menu__socials_inst">Instagram</p>
+                    <p class="menu__socials_teleg">Telegram</p>
+                </div>
+            </div>
+            <button class="menu-close" onclick="closeModal ()"></button>
+        </div>
     </div>
     <script>
         function openModal() {
@@ -473,7 +543,16 @@
        }
 
        function closeModal() {
-           document.getElementById("modal").style.top = "-400px";
+           document.getElementById("modal").style.top = "-550px";
+       }
+
+       //Menu
+       function openModal() {
+           document.getElementById("menu").style.top = "0px";
+       }
+
+       function closeModal() {
+           document.getElementById("menu").style.top = "-600px";
        }
     </script>
 </body>
