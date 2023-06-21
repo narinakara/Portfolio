@@ -11,9 +11,6 @@
         <div>
             <header class="header">
                 <div class="header__container">
-                    <div class="header__burger">
-                        <button class="burger" onclick="openModal()"></button>
-                    </div>
                     <nav class="header__navigation">
                         <ul class="header__nav">
                             <li class="header__item">
@@ -40,13 +37,16 @@
                                 <a href="mailto:karagevuryan04@bk.ru" class="header__contacts_mail">karagevuryan04@bk.ru</a>
                             </li>
                         </ul>
+                        <div class="header__burger">
+                            <button class="burger" onclick="openMenu()"></button>
+                        </div>
                     </nav>
                 </div>                
             </header>
             <div class="banner">
                 <div class="banner__container">
                     <div class="banner__cover">
-                        
+                        <img src="images/banner.png" alt="баннер">
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                 <div class="description__container">
                     <div class="description__person">
                         <h1 class="description__person_title">Обо&nbsp;мне</h1>
-                        <p class="description__person_text">Создаю только эффективные решения, которые работают на результат: от&nbsp;одностраничных сайтов, до крупных интернет-порталов.</p>
+                        <p class="description__person_text">Создаю только эффективные решения, которые работают на результат: от&nbsp;одностраничных сайтов, до&nbsp;крупных интернет-&nbsp;порталов.</p>
                     </div>
                     <div class="description__grid">
                         <div class="description__grid_item">
@@ -131,7 +131,7 @@
                             <h2 class="stages__title">03</h2>
                             <h2 class="stages__subject">Этап программирования</h2>
                         </div>
-                        <p class="stages__text">Верстаю сайт по вашему проекту пиксель в пиксель</p>
+                        <p class="stages__text">Верстаю сайт по вашему проекту пиксель в&nbsp;пиксель</p>
                     </div>
                 </div>
             </section>
@@ -381,7 +381,7 @@
                 <div class="development-flex">
                     <div class="development">
                         <h2 class="development__title">Разработка корпоративного  сайта</h2>
-                        <p class="development__text">Небольшой сайт с n-количеством страниц</p>
+                        <p class="development__text">Небольшой сайт с n-&nbsp;количеством страниц</p>
                         <button class="main__text" onclick="openModal()">Обсудить проект</button>
                     </div>
                     <div class="development-two">
@@ -432,7 +432,7 @@
                                 <label class="card__label">Телефон или почта</label>
                                 <input class="card__input" type="text" placeholder="Введите телефон">
                                 <label class="card__label">Выберите удобный способ связи</label>
-                                <input class="card__input" type="tel" placeholder="Telegram">
+                                <input class="card__input" type="tel" placeholder="Telegram"> 
                                 <button type="submit" class="card__link">Отправить</button>
                             </form>
                         </div>
@@ -495,11 +495,11 @@
                         <input class="card__input" type="text" placeholder="Введите телефон">
                         <label class="card__label">Выберите удобный способ связи</label>
                         <input class="card__input" type="tel" placeholder="Telegram">
-                        <button type="submit" class="card__link">Отправить</button>
+                        <button type="submit" class="card__link_modal">Отправить</button>
                     </form>
                 </div>
             </div>
-            <button class="burger-close" onclick="closeModal ()"></button>
+            <button class="burger-close" onclick="closeModal()"></button>
         </div>
         <div class="menu" id="menu">
             <ul class="header__menu">
@@ -534,7 +534,7 @@
                     <p class="menu__socials_teleg">Telegram</p>
                 </div>
             </div>
-            <button class="menu-close" onclick="closeModal ()"></button>
+            <button class="menu-close" onclick="closeMenu()"></button>
         </div>
     </div>
     <script>
@@ -547,12 +547,12 @@
        }
 
        //Menu
-       function openModal() {
+       function openMenu() {
            document.getElementById("menu").style.top = "0px";
        }
 
-       function closeModal() {
-           document.getElementById("menu").style.top = "-600px";
+       function closeMenu() {
+           document.getElementById("menu").style.top = "-620px";
        }
     </script>
 </body>
