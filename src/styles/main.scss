@@ -321,7 +321,6 @@ body {
     }
     &__text {
         display: flex;
-        flex-basis: 15%;
         position: relative;
         gap: 2rem;
         align-items: center;
@@ -349,57 +348,6 @@ body {
             &:hover {
                 color: $red;
                 cursor: pointer;
-            }
-        }
-    }
-    &__socials {
-        display: flex;
-        gap: 1rem;
-        position: relative;
-        z-index: 0;
-        @media (max-width:$r_mob_500) {
-            font-size: 1.2rem;
-            gap: 0;
-        }
-        &::after {
-            content: '';
-            border: 54px solid $red;
-            border-radius: 50%;
-            position: absolute;
-            right: 5rem;
-            top: -3rem;
-            z-index: -1;
-            @media (max-width:$r_mob_600) {
-                border: 40px solid $red;
-            }
-            @media (max-width:$r_mob_460) {
-                border: 30px solid $red;
-                top: -2rem;
-                right: 4rem;
-            }
-        }
-        &_vk {
-            border-right: 1px solid $white;
-            padding-right: 2.8rem;
-            cursor: pointer;
-            @media (max-width:$r_mob_460) {
-                padding-right: 1rem;
-            }
-        }
-        &_inst {
-            border-right: 1px solid $white;
-            padding-left: 2rem;
-            padding-right: 2.8rem;
-            cursor: pointer;
-            @media (max-width:$r_mob_460) {
-                padding-right: 1rem;
-            }
-        }
-        &_teleg {
-            padding-left: 2rem;
-            cursor: pointer;
-            @media (max-width:$r_mob_460) {
-                padding-left: 1rem;
             }
         }
     }
@@ -474,6 +422,50 @@ body {
 }
 .main__text:hover::before {
     width: 100%;
+}
+.social {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    @media (max-width:$r_mob_500) {
+        font-size: 1.2rem;
+        gap: 0;
+    }
+    &::after {
+        content: '';
+        border: 54px solid $red;
+        border-radius: 50%;
+        position: absolute;
+        right: 46.5rem;
+        top: 72rem;
+        z-index: -1;
+        @media (max-width:$r_desk_1600) {
+            display: none;
+        }
+        @media (max-width:$r_mob_400) {
+            display: block;
+            border: 30px solid $red;
+            top: 64rem;
+            right: 7rem;
+        }
+    }
+    &__item {
+        border-right: 1px solid rgba(243,242,240,.5);
+        padding-right: 3rem;
+        padding-left: 3rem;
+        @media (max-width:$r_mob_460) {
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: $white;
+    }
+}
+.social :nth-child(3) {
+    border-right: none;
 }
 .description {
     margin-top: 17.3rem;
@@ -1408,54 +1400,31 @@ body {
     @media (max-width:$r_tab_830) {
         display: block;
     }
-    &__socials {
+    &__social {
+        list-style-type: none;
         display: flex;
-        gap: 1rem;
-        margin: auto;
-        margin-left: 0;
-        margin-bottom: 0;
-        @media (max-width: $r_tab_930) {
+        justify-content: space-between;
+        margin: 0;
+        @media (max-width:$r_mob_500) {
             font-size: 1.2rem;
-        }
-        @media (max-width: $r_tab_870) {
-            font-size: 1rem;
             gap: 0;
         }
-        @media (max-width:$r_tab_830) {
-            justify-content: center;
-            font-size: 1.2rem;
-        }
-        &_vk {
-            border-right: 1px solid $white;
-            padding-right: 2.8rem;
-            cursor: pointer;
-            transition: .3s;
-            &:hover {
-                color: $red;
-            }
-        }
-        &_inst {
-            border-right: 1px solid $white;
-            padding-left: 2rem;
-            padding-right: 2.8rem;
-            cursor: pointer;
-            transition: .3s;
-            &:hover {
-                color: $red;
-            }
-        }
-        &_teleg {
-            padding-left: 2rem;
-            cursor: pointer;
-            transition: .3s;
-            &:hover {
-                color: $red;
+        &_item {
+            border-right: 1px solid rgba(243,242,240,.5);
+            padding-right: 11px;
+            padding-left: 11px;
+            @media (max-width:$r_mob_460) {
+                padding-right: 2rem;
+                padding-left: 2rem;
             }
         }
     }
     &__form {
         flex-basis: 56rem;
     }
+}
+.contact__social :nth-child(3) {
+    border-right: none;
 }
 .card {
     &__label {
@@ -1758,6 +1727,26 @@ body {
             }
         }
     }
+    &__social {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-bottom: 3rem;
+            @media (max-width:$r_mob_500) {
+                font-size: 1.2rem;
+                gap: 0;
+            }
+        &_item {
+            border-right: 1px solid rgba(243,242,240,.5);
+            padding-right: 11px;
+            padding-left: 11px;
+            @media (max-width:$r_mob_460) {
+                padding-right: 2rem;
+                padding-left: 2rem;
+            }
+        }
+    }
     &__item {
         border-top: 1px solid $white;
         padding: 2rem 0;
@@ -1774,39 +1763,6 @@ body {
             color: $red;
         }
     }
-    &__socials {
-        color: $white;
-        display: flex;
-        justify-content: center;
-        font-weight: 400;
-        font-size: 1.2rem;
-        line-height: 150%;
-        margin-bottom: 4rem;
-        &_vk {
-            border-right: 1px solid $white;
-            padding-right: 2.8rem;
-            cursor: pointer;
-            &:hover {
-                color: $red;
-            }
-        }
-        &_inst {
-            border-right: 1px solid $white;
-            padding-left: 2rem;
-            padding-right: 2.8rem;
-            cursor: pointer;
-            &:hover {
-                color: $red;
-            }
-        }
-        &_teleg {
-            padding-left: 2rem;
-            cursor: pointer;
-            &:hover {
-                color: $red;
-            }
-        }
-    }
     &__footer {
         border-top: 1px solid $white;
         padding-top: 4rem;
@@ -1819,6 +1775,9 @@ body {
         justify-content: center;
         margin-bottom: 2rem;
     }
+}
+.menu__social :nth-child(3) {
+    border-right: none;
 }
 .menu .header-nav {
     flex-direction: column;
