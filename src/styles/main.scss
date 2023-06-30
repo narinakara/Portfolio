@@ -321,6 +321,8 @@ body {
     }
     &__text {
         display: flex;
+        flex-basis: 15%;
+        position: relative;
         gap: 2rem;
         align-items: center;
         border: none;
@@ -328,6 +330,7 @@ body {
         background-color: transparent;
         cursor: pointer;
         transition: .3s;
+        padding: 0;
         @media (max-width:$r_mob_500) {
             font-weight: 700;
             font-size: 1.2rem;
@@ -340,16 +343,13 @@ body {
             content: '';
             background-image: url(../images/Arrow\ 1.svg);
             background-repeat: no-repeat;
-            width: 25px;
+            width: 16px;
             height: 12px;
             transition: .3s;
             &:hover {
                 color: $red;
                 cursor: pointer;
             }
-        }
-        &:hover {
-            border-bottom: 2px solid $white;
         }
     }
     &__socials {
@@ -460,6 +460,20 @@ body {
             }
         }
     }
+}
+.main__text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $white;
+    transition: width 0.3s ease-out;
+}
+.main__text:hover::before {
+    width: 100%;
 }
 .description {
     margin-top: 17.3rem;
@@ -672,11 +686,26 @@ body {
             top: -9rem;
             left: 35rem;
             z-index: -1;
+            @media (max-width:$r_tab_850) {
+                border: 210px solid $red;
+            }
+            @media (max-width:$r_tab_830) {
+                border: 200px solid $red;
+            }
+            @media (max-width:$r_tab_790) {
+                border: 180px solid $red;
+            }
+            @media (max-width:$r_tab) {
+                border: 170px solid $red;
+            }
+            @media (max-width:$r_mob_730) {
+                border: 155px solid $red;   
+            }
             @media (max-width:$r_mob_700) {
-                border: 200px solid $red;   
+                border: 140px solid $red;   
             }
             @media (max-width:$r_mob_600) {
-                border: 155px solid $red;   
+                border: 130px solid $red;   
             }
             @media (max-width:$r_mob_500) {
                 border: 120px solid $red; 
@@ -992,7 +1021,7 @@ body {
     }
     &__img {
         transition: .3s;
-        padding: 3.1rem 10.7rem;
+       
         cursor: pointer;
         filter: grayscale(1);
         z-index: -1;
