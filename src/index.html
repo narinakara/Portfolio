@@ -149,33 +149,36 @@
                 </div>
             </div>
             <div class="portfolio__container">
-                <div class="agata">
-                    <div class="agata__desc">
-                        <h3 class="agata__desc_title">Agata Bielen</h3>
-                        <ul class="agata__desc_text">
-                            <li class="agata__desc_item">– верстка по макету из Figma</li>
-                            <li class="agata__desc_item">– наполнение сайта контентом</li>
-                            <li class="agata__desc_item">– внедрена функция добавления видео</li>
-                        </ul>
-                        <p class="agata__desc_time">Затрачено времени: 5&nbsp;рабочих дней</p>
+                <div class="portfolio__list">
+                    <div class="portfolio__list-block">
+                        <div class="portfolio__list-text">
+                            <h3 class="portfolio__list-title"><a href="" class="portfolio__list-title_link" target="_blank">Сайт фитнес-зала</a></h3>
+                            <ul class="portfolio__list-deskription">
+                                <li class="portfolio__list-item">верстка по макету из Figma</li>
+                                <li class="portfolio__list-item">наполнение сайта контентом</li>
+                                <li class="portfolio__list-item">валидация формы</li>
+                            </ul>
+                            <p class="portfolio__list-time">Затрачено времени: 7 рабочих дней</p>
+                        </div>
+                        <a href="" class="portfolio__list-link" target="_blank">
+                            <img class="portfolio__list-image"  src="images/kTGstj-A 1.svg" alt="Сайт">
+                        </a>
                     </div>
-                    <a href="https://narinakara.github.io/-Module01-Gym-/index.html" class="work">
-                        <img src="images/kTGstj-A 1.svg" alt="Сайт">
-                    </a>
-                </div>
-                <div class="lemon">
-                    <div class="lemon__desc">
-                        <h3 class="lemon__desc_title">Lemon</h3>
-                        <ul class="lemon__desc_text">
-                            <li class="lemon__desc_item">– верстка по макету из PSD</li>
-                            <li class="lemon__desc_item">– доступен функционал получения заказов</li>
-                            <li class="lemon__desc_item">– реализована кнопка «Заказать в 1 клик»</li>
-                        </ul>
-                        <p class="lemon__desc_time">Затрачено времени: 7&nbsp;рабочих дней</p>
+                    <div class="portfolio__list-block ">
+                        <div class="portfolio__list-text">
+                            <h3 class="portfolio__list-title"><a href="" class="portfolio__list-title_link" target="_blank">Сайт онлайн магазина здорового&nbsp;питания</a></h3>
+                            <ul class="portfolio__list-deskription">
+                                <li class="portfolio__list-item">верстка по макету PSD</li>
+                                <li class="portfolio__list-item">наполнение сайта контентом</li>
+                                <li class="portfolio__list-item">счетчик колличества товаров</li>
+                                <li class="portfolio__list-item">сортировка каталога товаров</li>
+                            </ul>
+                            <p class="portfolio__list-time">Затрачено времени: 7 рабочих дней</p>
+                        </div>
+                        <a href="" class="portfolio__list-link" target="_blank">
+                            <img class="portfolio__list-image"   src="images/w_XYX1dQ 1.svg" alt="Сайт">
+                        </a>
                     </div>
-                    <a href="https://narinakara.github.io/Modele02-Shop/dist" class="work">
-                        <img src="images/w_XYX1dQ 1.svg" alt="Сайт">
-                    </a>
                 </div>
             </div>
         </section>
@@ -443,8 +446,32 @@
                             <form class="form">
                                 <label class="card__label">Телефон или почта</label>
                                 <input class="card__input" type="text" placeholder="Введите телефон">
-                                <label class="card__label">Выберите удобный способ связи</label>
-                                <input class="card__input" type="tel" placeholder="Telegram"> 
+                                 <label class="card__label">Выберите удобный способ связи</label>
+                                <!-- <input class="card__input" type="tel" placeholder="Telegram">  --> 
+                                <label class="drop">
+                                    <input type="checkbox" id="target-drop-example"> <!-- Toggle Drop -->
+                                    <span class="control">Telegram</span> <!-- Fake button -->
+                              
+                                    <!-- Items -->
+                                    <ul class="drop-items">
+                                      <li class="item-drop">
+                                        <a target="_blank"
+                                           href="https://codepen.io/robsonklein23">WhatsApp</a></li>
+                                      <li class="item-drop">
+                                        <a target="_blank"
+                                           href="https://www.behance.net/robsonklein">Mail</a></li>
+                                      <li class="item-drop">
+                                        <a target="_blank"
+                                           href="https://www.linkedin.com/in/robsonklein/">Звонок на телефон</a></li>
+                                    <li class="item-drop">
+                                        <a target="_blank"
+                                            href="https://www.linkedin.com/in/robsonklein/">SMS сообщение</a></li>
+                                    </ul>
+                              
+                                    <!-- Alternative to close dropdown with click out -->
+                                    <label for="target-drop-example" class="overlay-close"></label>
+                              
+                                  </label>   
                                 <button type="submit" class="card__link">Отправить</button>
                             </form>
                         </div>
