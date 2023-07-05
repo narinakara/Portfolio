@@ -25,6 +25,7 @@ $r_mob_470: 470px;
 $r_mob_500: 500px;
 $r_mob_530: 530px;
 $r_mob_550: 550px;
+$r_mob_560: 560px;
 $r_mob_600: 600px;
 $r_mob_650: 650px;
 $r_mob_670: 670px;
@@ -701,16 +702,33 @@ body {
                 border: 140px solid $red;   
             }
             @media (max-width:$r_mob_600) {
-                border: 130px solid $red;   
+                border: 120px solid $red;   
+            }
+            @media (max-width:$r_mob_560) {
+                border: 110px solid $red; 
+                left: 35rem;
+            }
+            @media (max-width:$r_mob_530) {
+                border: 100px solid $red; 
+                left: 25rem;
             }
             @media (max-width:$r_mob_500) {
-                border: 120px solid $red; 
+                border: 100px solid $red; 
                 left: 25rem;
+            }
+            @media (max-width:$r_mob_440) {
+                left: 20rem;
             }
             @media (max-width:$r_mob_400) {
                 border: 100px solid $red; 
                 left: 18rem;
                 top: -1rem;
+            }
+            @media (max-width:$r_mob_390) {
+                left: 15rem;
+            }
+            @media (max-width:$r_mob_360) {
+                left: 10rem;
             }
         }
     }
@@ -1128,7 +1146,6 @@ body {
         }
         @media (max-width:$r_mob_600) {
             width: 6rem;
-            padding: 2rem 8rem;
         }
         @media (max-width:$r_mob_440) {
             width: 4rem;
@@ -1616,6 +1633,7 @@ input::-webkit-input-placeholder { color: white; }
           opacity:1;
           max-height: 400px;
           padding: .6rem 0;
+          background-color: #5d5d60;
         }
         ~.control{       
           z-index:99;
@@ -1676,13 +1694,14 @@ input::-webkit-input-placeholder { color: white; }
         list-style:none;
         a{        
           display:block;
-          color: #555;
+          color: $white;
           text-decoration: none;
           padding: .6rem;
           transition: all .3s ease;
           @media (hover: hover) {
             &:hover{
               background: #eee;
+              color: black;
             }          
           }
         }
