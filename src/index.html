@@ -533,8 +533,32 @@
                         <label class="card__label">Телефон или почта</label>
                         <input class="card__input" type="text" placeholder="Введите телефон">
                         <label class="card__label">Выберите удобный способ связи</label>
-                        <input class="card__input" type="tel" placeholder="Telegram">
-                        <button type="submit" class="card__link_modal">Отправить</button>
+                        <!-- <input class="card__input" type="tel" placeholder="Telegram">  --> 
+                        <label class="drop">
+                            <input type="checkbox" id="target-drop-example"> <!-- Toggle Drop -->
+                            <span class="control">Telegram</span> <!-- Fake button -->
+                      
+                            <!-- Items -->
+                            <ul class="drop-items">
+                              <li class="item-drop">
+                                <a target="_blank"
+                                   href="https://codepen.io/robsonklein23">WhatsApp</a></li>
+                              <li class="item-drop">
+                                <a target="_blank"
+                                   href="https://www.behance.net/robsonklein">Mail</a></li>
+                              <li class="item-drop">
+                                <a target="_blank"
+                                   href="https://www.linkedin.com/in/robsonklein/">Звонок на телефон</a></li>
+                            <li class="item-drop">
+                                <a target="_blank"
+                                    href="https://www.linkedin.com/in/robsonklein/">SMS сообщение</a></li>
+                            </ul>
+                      
+                            <!-- Alternative to close dropdown with click out -->
+                            <label for="target-drop-example" class="overlay-close"></label>
+                      
+                          </label>   
+                        <button type="submit" class="card__link">Отправить</button>
                     </form>
                 </div>
             </div>
