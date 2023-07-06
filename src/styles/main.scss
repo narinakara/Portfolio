@@ -1932,6 +1932,7 @@ input::-webkit-input-placeholder { color: white; }
     margin: 20px auto 0;
     box-sizing: border-box;
     transition: .5s;
+    padding: 10px;
     &__contacts {
         display: flex;
         gap: 1rem;
@@ -2040,7 +2041,7 @@ input::-webkit-input-placeholder { color: white; }
     background-repeat: no-repeat;
     border: none;
     position: absolute;
-    top: -15px;
+    top: -4px;
     right: 20px;
     cursor: pointer;
 }
